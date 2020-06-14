@@ -113,7 +113,12 @@ p {
   margin-bottom: 1em;
 }
 a {
+  color: #1e90ff;
   text-decoration: none;
+  transition: .3s;
+}
+a:hover {
+  opacity: .8;
 }
 section {
   display: flex;
@@ -129,9 +134,10 @@ figure {
   margin: 1em;
   text-transform: uppercase;
   color: #1e90ff;
+  text-align: center;
 }
 .content-wrapper {
-  width: 90%;
+  width: 80%;
 }
 .break {
   margin-top: .5em;
@@ -173,14 +179,6 @@ nav ul li {
   display: flex;
   align-items: center;
 }
-nav ul li a {
-  color: #1e90ff;
-  text-decoration: none;
-  transition: .3s;
-}
-nav ul li a:hover {
-  color: #000;
-}
 #hero {
   width: 100%;
   display: flex;
@@ -208,7 +206,7 @@ nav ul li a:hover {
    PROJECTS SECTION
    ========================================================================== */
 #projects .subhead {
-  width: 40%;
+  width: 50%;
 }
 .veil {
   position: relative;
@@ -227,18 +225,12 @@ nav ul li a:hover {
 .img-description {
   margin-bottom: .25em;
 }
-.img-description a {
-  color: #1e90ff;
-  transition: .3s;
-}
-.img-description a:hover {
-  color: #000;
-}
+
 /* ==========================================================================
    ABOUT SECTION
    ========================================================================== */
 #about .subhead {
-  width: 45%;
+  width: 50%;
 }
 #ryan {
   height: 40vh;
@@ -262,7 +254,7 @@ footer {
   flex-flow: row wrap;
 }
 footer .subhead {
-  width: 66%;
+  width: 70%;
 }
 #contact, #social {
   display: flex;
@@ -275,14 +267,16 @@ footer .subhead {
   font-size: 1.5em;
   margin-bottom: 1em;
 }
-.badges {
+#badges {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  width: 50%;
 }
 .social-badge {
-  width: 4em;
+  width: 3.5em;
+  padding: .5em;
 }
 #copyright {
   display: flex;
@@ -291,7 +285,7 @@ footer .subhead {
   flex-flow: row wrap;
 }
 #copyright p {
-  width: 74%;
+  font-size: .8em;
 }
 /* ==========================================================================
    Helper classes
