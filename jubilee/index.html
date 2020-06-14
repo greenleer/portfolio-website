@@ -13,40 +13,39 @@
 
 <body>
   <header>
-    <div class="half-width">
-      <h1 id="marquee"><a href="../index.html">Ryan Greenlee : Creative Human</a></h1>
-    </div>
-    <div class="half-width">
-      <nav>
-        <ul>
-          <li><a href="../index.html#projects">projects</a></li>
-          <li><a href="../index.html#about">about</a></li>
-          <li><a href="../index.html#contact">contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <figure>
+      <a href="../index.html#home"><img id="logo" src="../img/ryan-greenlee-logo.png" alt="Ryan Greenlee Web Designer"></a>
+    </figure>
+    <div class="break"></div>
+    <nav>
+      <ul>
+        <li><a href="../index.html#projects">projects</a></li>
+        <li><a href="../index.html#about">about</a></li>
+        <li><a href="../index.html#contact">contact</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section>
-      <div class="full-width">
-        <h3 class="subhead">Jubilee Austen Portfolio</h3>
+      <h3 class="subhead">Jubilee Austen Portfolio</h3>
         <figure>
-          <img src="../img/jubilee-thumbnail.png" alt="Photo Gallery Thumbnail" />
+          <img class="project-thumb" src="../img/jubilee-thumbnail.png" alt="Photo Gallery Thumbnail" />
           <figcaption>
             <a href="https://greenleer.github.io/jubilee-austen/" target="_blank">Live Demo</a>
             <a href="https://github.com/greenleer/jubilee-austen" target="_blank">View Source</a>
           </figcaption>
         </figure>
-      <div class="middle-col">
+      <div class="content-wrapper">
         <h3>My Role:</h3>
         <p>Web Developer</p>
         <h3>Built With:</h3>
         <p>HTML / CSS / Photoshop</p>
         <h3>Design Challenge:</h3>
+        <p>This website was initially created as a static, 12-column grid layout, with minimal responsive features.</p>
+        <p>The objective was to preserve the content structure, while creating a fully mobile responsive layout for the site.</p>
           <ul>
-            <li>Create a basic portfolio page</li>
-            <li>Static 12-column grid</li>
-            <li>Nested relative width div elements</li>
+            <li>Replaced nested div floats with Flexbox structure</li>
+            <li>Re-designed for mobile first with media display breakpoints</li>
             <li>Layout built from Photoshop design comp</li>
           </ul>
         </div>
@@ -54,7 +53,7 @@
     </section>
   </main>
   <footer>
-    <div id="copyright" class="full-width">
+    <div id="copyright">
       <p>Copyright 2020 | <a href="../index.html#home">Ryan Greenlee</a></p>
     </div>
   </footer>
