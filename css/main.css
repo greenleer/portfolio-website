@@ -124,7 +124,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-flow: column;
 }
 figure {
   margin: 0;
@@ -133,7 +133,7 @@ figcaption {
   padding: 1em;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 figcaption a {
   font-size: .8em;
@@ -162,6 +162,9 @@ figcaption a:hover {
   width: 70%;
   height: 1px;
   background-color: #1e90ff;
+}
+.project-feature {
+  width: 75vw;
 }
 /* ==========================================================================
    HEADER SECTION
@@ -202,7 +205,7 @@ nav ul li {
   display: flex;
   justify-content: start;
   flex-flow: row wrap;
-  background: #333;
+  background: #1e90ff;
   background-image: url('../img/robot-costume.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -222,8 +225,10 @@ nav ul li {
 /* ==========================================================================
    PROJECTS SECTION
    ========================================================================== */
+#projects .content-wrapper {
+  width: 100%;
+}
 .veil {
-  position: relative;
   background-color: #1e90ff;
   margin-bottom: 2em;
 }
@@ -234,10 +239,11 @@ nav ul li {
   opacity: .7;
 }
 .project-thumb {
-  width: 100vw;
+  width: 100%;
 }
 .img-description {
   margin-bottom: .25em;
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -262,7 +268,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-flow: column;
 }
 #contact, #social {
   display: flex;
@@ -383,10 +389,102 @@ footer {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* =========================WIDE PHONES =================================*/
+@media only screen and (min-width: 486px) {
+  .break {
+    display: none;
+  }
+  header {
+	  justify-content: space-around;
+  }
+  header figure {
+	  width: 50%;
+  }
+  #logo {
+    height: 10vh;
+    margin: .5em 2em;
+  }
+  nav {
+    font-size: 1em;
+    width: 50%;
+  }
+  nav ul {
+    justify-content: space-around;
+  }
+  #jumbotron {
+    font-size: 2.5em;
+    margin-top: .5em;
+  }
 }
+/* =========================TABLET STYLES =================================*/
+@media only screen and (min-width: 610px) {
+
+  #jumbotron {
+    font-size: 2.8em;
+    margin-top: .25em;
+    margin-left: .7em;
+    width: 50%;
+  }
+  .veil {
+	  margin-bottom: 2em;
+  }
+  #projects .content-wrapper {
+    width: 80%;
+  }
+  #about .content-wrapper {
+    width: 70%;
+  }
+  #badges {
+    flex-flow: row;
+  }
+}
+@media only screen and (min-width: 740px) {
+  #jumbotron {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .subhead {
+    width: 90%;
+  }
+  #logo {
+    height: 15vh;
+  }
+  nav {
+    width: 35%;
+  }
+  #hero {
+    min-height: 85vh;
+  }
+  #jumbotron {
+    font-size: 4.5em;
+    margin-left: 1em;
+    margin-top: .5em;
+    width: 50%;
+  }
+  #projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  #projects .content-wrapper {
+    width: 45%;
+    margin: 1em;
+  }
+  #about .content-wrapper {
+    width: 60%;
+  }
+  footer {
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+  #contact, #social {
+    width: 50%;
+  }
+}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
